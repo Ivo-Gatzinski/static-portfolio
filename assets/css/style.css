@@ -2,8 +2,10 @@
 :root {
 --light-turq: #82c2c3;
 --dark-grey: #363642;
+--large-pad: 50px;
 --small-pad: 10px;
 --mini-pad: 5px;
+--micro-pad: 2px;
 font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,7 +16,7 @@ background-color: var(--dark-grey);
 color: var(--light-turq);
 }
 
-.h1 {
+.h1, .h2 {
     background-color: var(--light-turq);
     color: var(--dark-grey);
     padding: var(--mini-pad);
@@ -32,14 +34,26 @@ color: var(--light-turq);
 }
 
 .nav a {
-    padding-bottom: 2px;
+    padding-bottom: var(--micro-pad);
     color: var(--light-turq);
     text-decoration: none;
-    border-bottom: var(--light-turq) solid 3px;
+    border-bottom: var(--light-turq) solid var(--micro-pad);
+}
+
+.subheader {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--small-pad);
+    background-image: url("../images/blue_herring.jpeg");
+    background-origin: border-box;
+    background-color: transparent;
+    background-size: 100%;
+    
+
 }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 175px) {
     /*on mobile phones, set one column, 100%*/
 
 
@@ -54,6 +68,13 @@ color: var(--light-turq);
         flex: 100%;
     }
 
+    .h2 {
+        
+        padding: var(--mini-pad);
+        font-size: 150%;
+        margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
+    }
+
     .nav li {
         font-size: 125%;
         padding: var(--small-pad);
@@ -64,7 +85,13 @@ color: var(--light-turq);
         line-height: 200%;
         flex: auto;
 }
+    .subheader {
+        padding-top: var(--large-pad);
+        justify-content: center;
+        
+    }
 }
+
 @media screen and (min-width: 768px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
     body, main {
@@ -78,6 +105,13 @@ color: var(--light-turq);
         flex: 100%;
     }
 
+    .h2 {
+        
+        padding: var(--mini-pad);
+        font-size: 200%;
+        margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
+    }
+
     .nav li {
         font-size: 125%;
         padding: var(--small-pad);
@@ -88,7 +122,10 @@ color: var(--light-turq);
         line-height: 200%;
         flex: auto;
 }
-
+.subheader {
+    justify-content: right;
+    
+}
 }
 
   /* media query for larger screens */
@@ -99,12 +136,20 @@ color: var(--light-turq);
         
     }
     .h1 {
-        justify-content: left;
-        padding-left: 50px;
+        
+        padding-left: var(--large-pad);
         font-size: 300%;
         flex:none;
         margin: var(--small-pad) var(--small-pad) var(--small-pad) 0;
     }
+
+    .h2 {
+        
+        padding: var(--mini-pad);
+        font-size: 200%;
+        margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
+    }
+
 
     .nav li {
         font-size: 100%;
@@ -116,10 +161,15 @@ color: var(--light-turq);
     .nav {
         text-align: right;
         flex: auto;
-        padding-right: 50px;
+        padding-right: var(--large-pad);
         padding-top: 25px;
         margin: var(--mini-pad);
         
+        
+    }
+
+    .subheader {
+        justify-content: right;
         
     }
 }
