@@ -2,6 +2,8 @@
 :root {
 --light-turq: #82c2c3;
 --dark-grey: #363642;
+--small-pad: 10px;
+--mini-pad: 5px;
 font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -15,12 +17,12 @@ color: var(--light-turq);
 .h1 {
     background-color: var(--light-turq);
     color: var(--dark-grey);
-    padding: 5px;
+    padding: var(--mini-pad);
 }
 
 .nav {
-    padding-top: 10px;
-    padding-bottom: 7px;
+    padding-top: var(--small-pad);
+    padding-bottom: var(--mini-pad);
     
 }
 
@@ -54,7 +56,7 @@ color: var(--light-turq);
 
     .nav li {
         font-size: 125%;
-        padding: 10px;
+        padding: var(--small-pad);
         
     }
     .nav {
@@ -78,7 +80,7 @@ color: var(--light-turq);
 
     .nav li {
         font-size: 125%;
-        padding: 10px;
+        padding: var(--small-pad);
         
     }
     .nav {
@@ -101,13 +103,13 @@ color: var(--light-turq);
         padding-left: 50px;
         font-size: 300%;
         flex:none;
-        margin: 10px;
+        margin: var(--small-pad) var(--small-pad) var(--small-pad) 0;
     }
 
     .nav li {
         font-size: 100%;
-        padding: 5px;
-        margin: 5px;
+        padding: var(--mini-pad);
+        margin: var(--mini-pad);
         
     }
 
@@ -116,7 +118,7 @@ color: var(--light-turq);
         flex: auto;
         padding-right: 50px;
         padding-top: 25px;
-        margin: 5px;
+        margin: var(--mini-pad);
         
         
     }
