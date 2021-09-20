@@ -1,7 +1,11 @@
+/*thank you Erica for asking the question in OH*/
+html {scroll-behavior: smooth;}
+
 /*set color and font variables*/
 :root {
 --light-turq: #82c2c3;
 --dark-grey: #363642;
+--dark-blue: #094d9b;
 --large-pad: 50px;
 --small-pad: 10px;
 --mini-pad: 5px;
@@ -9,6 +13,7 @@
 font-family: Arial, Helvetica, sans-serif;
 }
 
+/*header behavior*/
 header {
     display: flex;
     flex-wrap: wrap;
@@ -16,13 +21,25 @@ background-color: var(--dark-grey);
 color: var(--light-turq);
 }
 
+/*top headings*/
 .h1, .h2 {
     background-color: var(--light-turq);
     color: var(--dark-grey);
     padding: var(--mini-pad);
 }
 
-.nav {
+.subheader {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--small-pad);
+    background-image: url("../images/blue_herring.jpeg");
+    background-origin: border-box;
+    background-color: transparent;
+    background-size: 100%;
+}    
+
+/*navigation look*/
+.nav  {
     padding-top: var(--small-pad);
     padding-bottom: var(--mini-pad);
     
@@ -40,16 +57,16 @@ color: var(--light-turq);
     border-bottom: var(--light-turq) solid var(--micro-pad);
 }
 
-.subheader {
-    display: flex;
-    flex-wrap: wrap;
+/*main section*/ 
+.content, .bio p {
     padding: var(--small-pad);
-    background-image: url("../images/blue_herring.jpeg");
-    background-origin: border-box;
-    background-color: transparent;
-    background-size: 100%;
-    
+}
 
+/*section headings*/
+.h3 {
+    background-color: white;
+    color: var(--dark-blue);
+    flex: none;
 }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
@@ -72,7 +89,15 @@ color: var(--light-turq);
         
         padding: var(--mini-pad);
         font-size: 150%;
+        margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;;
+    }
+
+    .h3 {
+        padding: var(--mini-pad);
         margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
+        border-bottom: var(--dark-blue) solid 2px;
+            font-size: 133%;
+    
     }
 
     .nav li {
@@ -94,11 +119,7 @@ color: var(--light-turq);
 
 @media screen and (min-width: 768px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
-    body, main {
-        display: block;
-        width: 100%;
-        
-    }
+    
     .h1 {
         text-align: center;
         font-size: 300%;
@@ -111,6 +132,9 @@ color: var(--light-turq);
         font-size: 200%;
         margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
     }
+    .h3 {
+        font-size: 200%;
+        }
 
     .nav li {
         font-size: 125%;
@@ -130,9 +154,10 @@ color: var(--light-turq);
 
   /* media query for larger screens */
   @media screen and (min-width: 992px) {
-    body, main {
-        display: block;
-        width: 100%;
+
+    .work {
+        display: flex;
+        flex-wrap: wrap;
         
     }
     .h1 {
@@ -150,6 +175,12 @@ color: var(--light-turq);
         margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
     }
 
+    .h3 {
+    border-right: 3px solid var(--dark-blue);
+    border-bottom: none;
+    flex: none;
+    font-size: 200%;
+    }
 
     .nav li {
         font-size: 100%;
@@ -165,11 +196,15 @@ color: var(--light-turq);
         padding-top: 25px;
         margin: var(--mini-pad);
         
-        
     }
 
     .subheader {
         justify-content: right;
         
+    }
+
+    .about {
+        display: flex;
+        flex: content;
     }
 }
