@@ -61,7 +61,7 @@ color: var(--light-turq);
 }
 
 /*main section*/ 
-.content, .bio p {
+main .bio p {
     padding: var(--small-pad);
 }
 
@@ -69,19 +69,51 @@ color: var(--light-turq);
 .h3 {
     background-color: white;
     color: var(--dark-blue);
-    flex: none;
+}
+
+/*sample cards*/
+.samples {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: var(--mini-pad);
+
+}
+
+/*contact info links*/
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.info-item {
+    margin: var(--small-pad);
+    padding-inline: 50px;
+}
+
+.info-item a {
+    color: var(--dark-grey);
+    text-decoration: none;
+    border-bottom: var(--dark-blue) solid var(--micro-pad);
+    padding-bottom: var(--mini-pad);
 }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 175px) {
-    /*on mobile phones, set one column, 100%*/
 
-
-    body, main {
+    /*on mobile phones, set one column */
+    body {
         display: block;
-        width: 100%;
-        
     }
+    
     .h1 {
         text-align: center;
         font-size: 200%;
@@ -100,6 +132,7 @@ color: var(--light-turq);
         margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
         border-bottom: var(--dark-blue) solid 2px;
             font-size: 133%;
+            flex:100%;
     
     }
 
@@ -117,6 +150,15 @@ color: var(--light-turq);
         padding-top: var(--large-pad);
         justify-content: center;
         
+    }
+
+    .info {
+        display: block;
+        
+    }
+
+    .info-item {
+        padding-block: 10px;
     }
 }
 
@@ -153,21 +195,48 @@ color: var(--light-turq);
     justify-content: right;
     
 }
+
+.contact {
+    display: block;
+
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-item {
+    margin: var(--small-pad);
+    padding-inline: 20px;
+}
+
 }
 
   /* media query for larger screens */
   @media screen and (min-width: 992px) {
 
+    
+    .bio {
+        width: 75%;
+    }
     .work {
         display: flex;
         flex-wrap: wrap;
-        
     }
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .h1 {
         
         padding-left: var(--large-pad);
         font-size: 300%;
         flex:none;
+        width: 25%;
         margin: var(--small-pad) var(--small-pad) var(--small-pad) 0;
     }
 
@@ -181,8 +250,9 @@ color: var(--light-turq);
     .h3 {
     border-right: 3px solid var(--dark-blue);
     border-bottom: none;
-    flex: none;
     font-size: 200%;
+    width: 25%;
+    text-align: right;
     }
 
     .nav li {
@@ -205,9 +275,5 @@ color: var(--light-turq);
         justify-content: right;
         
     }
-
-    .about, .contact {
-        display: flex;
-        flex: content;
-    }
+    
 }
