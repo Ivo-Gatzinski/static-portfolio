@@ -7,29 +7,36 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-
+  <!-- body contains everything -->
   <body>
+    <!-- top header -->
     <header>
       <div class="h1">
         <h1>Lernantino</h1>
       </div>
-      <div class="nav">
+      <!-- nav links on same line as top header -->
+      <nav class="nav">
         <ul>
           <li><a href="#about">About Me</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#contact">Contact Me</a></li>
           <li><a href="#resume">Resume</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
-    <section class="subheader">
-      <div class="h2">
-        <h2>Cool Subtitle Here!</h2>
-      </div>
-    </section>
+    <!-- main contains the rest sections -->
     <main>
-      <div class="about" id="about">
+      <!-- this is the subtitle subheader -->
+      <section class="subheader">
+        <div class="h2">
+          <h2>Cool Subtitle Here!</h2>
+        </div>
+      </section>
+      <!-- each section has an ID for navigation -->
+      <section class="about" id="about">
+        <!-- header for about section -->
         <div class="h3">About Me</div>
+        <!-- bio paragraphs -->
         <div class="bio">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
@@ -50,11 +57,16 @@
             quas dolore deleniti neque, obcaecati necessitatibus. Sunt?
           </p>
         </div>
-      </div>
-      <div class="work" id="work">
+      </section>
+      <!-- work section -->
+      <section class="work" id="work">
+        <!-- header for work section -->
         <div class="h3">Work</div>
+        <!-- work samples container -->
         <div class="samples">
+          <!-- individual work samples -->
           <div class="surf card">
+            <!-- each card has a title -->
             <div class="h4">
               <h3>Surf Report</h3>
               <p>MERN Stack</p>
@@ -85,12 +97,15 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="contact" id="contact">
+      </section>
+      <!-- contact section -->
+      <section class="contact" id="contact">
+        <!-- header for contact section -->
         <div class="h3">Contact Me</div>
+        <!-- contact info container -->
         <div class="info">
-          <div class="info-item"><a href="tel:5555555555">555.555.5555</a></div>
+          <!-- individual info bits -->
+          <div class="info-item"><a href="tel:6193520538">619.352.0538</a></div>
           <div class="info-item">
             <a href="mailto:ucsd.camp.21@gmail.com">ucsd.camp.21@gmail.com</a>
           </div>
@@ -101,7 +116,7 @@
             <a href="https://twitter.com/IvoGatzinski">Twitter</a>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer></footer>
   </body>
