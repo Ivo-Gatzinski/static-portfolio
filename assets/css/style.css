@@ -1,276 +1,289 @@
 /*thank you Erica for asking the question in OH*/
-html {scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+}
 
 /*set color and font variables*/
 :root {
---light-turq: #82c2c3;
---dark-grey: #363642;
---dark-blue: #094d9b;
---large-pad: 50px;
---small-pad: 10px;
---mini-pad: 5px;
---micro-pad: 2px;
+  --light-turq: #82c2c3;
+  --dark-grey: #363642;
+  --dark-blue: #094d9b;
+  --large-pad: 50px;
+  --small-pad: 10px;
+  --mini-pad: 5px;
+  --micro-pad: 2px;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*header behavior*/
 header {
-    display: flex;
-    flex-wrap: wrap;
-background-color: var(--dark-grey);
-color: var(--light-turq);
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--dark-grey);
+  color: var(--light-turq);
 }
 
 /*top headings*/
-.h1, .h2 {
-    background-color: var(--light-turq);
-    color: var(--dark-grey);
-    padding: var(--mini-pad);
+.h1,
+.h2 {
+  background-color: var(--light-turq);
+  color: var(--dark-grey);
+  padding: var(--mini-pad);
 }
 
 .subheader {
-    display: flex;
-    flex-wrap: wrap;
-    padding: var(--small-pad);
-    background-image: url("../images/blue_herring.jpeg");
-    background-origin: border-box;
-    background-color: transparent;
-    background-size: 100%;
-}    
-
-/*navigation look*/
-.nav  {
-    padding-top: var(--small-pad);
-    padding-bottom: var(--mini-pad);
-    
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--small-pad);
+  background-image: url("../images/blue_herring.jpeg");
+  background-origin: border-box;
+  background-color: transparent;
+  background-size: 100%;
 }
 
-.nav li{
-    display: inline;
-    
+/*navigation look*/
+.nav {
+  padding-top: var(--small-pad);
+  padding-bottom: var(--mini-pad);
+}
+
+.nav li {
+  display: inline;
 }
 
 .nav a {
-    padding-bottom: var(--micro-pad);
-    color: var(--light-turq);
-    text-decoration: none;
-    border-bottom: var(--light-turq) solid var(--micro-pad);
+  padding-bottom: var(--micro-pad);
+  color: var(--light-turq);
+  text-decoration: none;
+  border-bottom: var(--light-turq) solid var(--micro-pad);
 }
 
-/*about me paragraphs*/ 
+/*about me paragraphs*/
 .bio p {
-    padding: var(--small-pad);
+  padding: var(--small-pad);
 }
 
 /*section headings*/
 .h3 {
-    background-color: white;
-    color: var(--dark-blue);
+  background-color: white;
+  color: var(--dark-blue);
 }
 
 /*sample cards*/
 .samples {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: var(--mini-pad);
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--small-pad);
+}
 
+.card {
+    height: 200px;
+  width: 50%;
+  background-origin: border-box;
+  background-size: 100%;
+  border: var(--light-turq) solid var(--mini-pad);
+  filter: grayscale(35%);
+}
+
+.card:hover {
+  filter: none;
+}
+
+.surf {
+  background-image: url("../images/surf.jpeg");
+}
+
+.h4 {
+  background-color: var(--light-turq);
+  padding: var(--mini-pad);
+}
+
+.LED {
+  background-image: url("../images/red_dot.jpeg");
+}
+
+.calc {
+  background-image: url("../images/calc.jpeg");
+}
+
+.pastel {
+  background-color: var(--light-turq);
+}
+
+.run {
+  background-image: url("../images/run.jpeg");
 }
 
 /*contact info links*/
 
 .info {
-    display: flex;
-    flex-wrap: wrap;
-    
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .info-item {
-    margin: var(--small-pad);
-    padding-inline: 50px;
+  margin: var(--small-pad);
+  padding-inline: 50px;
 }
 
 .info-item a {
-    color: var(--dark-grey);
-    text-decoration: none;
-    border-bottom: var(--dark-blue) solid var(--micro-pad);
-    padding-bottom: var(--mini-pad);
+  color: var(--dark-grey);
+  text-decoration: none;
+  border-bottom: var(--dark-blue) solid var(--micro-pad);
+  padding-bottom: var(--mini-pad);
 }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 175px) {
+  /*on mobile phones, set one column */
+  body {
+    flex-direction: column;
+  }
 
-    /*on mobile phones, set one column */
-    body {
-        display: block;
-    }
-    
-    .h1 {
-        text-align: center;
-        font-size: 200%;
-        flex: 100%;
-    }
+  .h1 {
+    text-align: center;
+    font-size: 200%;
+    flex: 100%;
+  }
 
-    .h2 {
-        
-        padding: var(--mini-pad);
-        font-size: 150%;
-        margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;;
-    }
+  .h2 {
+    padding: var(--mini-pad);
+    font-size: 150%;
+    margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
+  }
 
-    .h3 {
-        padding: var(--mini-pad);
-        margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
-        border-bottom: var(--dark-blue) solid 2px;
-            font-size: 133%;
-            
-    
-    }
+  .h3 {
+    padding: var(--mini-pad);
+    margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
+    border-bottom: var(--dark-blue) solid 2px;
+    font-size: 133%;
+  }
 
-    .nav li {
-        font-size: 125%;
-        padding: var(--small-pad);
-        
-    }
-    .nav {
-        text-align: center;
-        line-height: 200%;
-        flex: auto;
-}
-    .subheader {
-        padding-top: var(--large-pad);
-        justify-content: center;
-        
-    }
+  .nav li {
+    font-size: 125%;
+    padding: var(--small-pad);
+  }
+  .nav {
+    text-align: center;
+    line-height: 200%;
+    flex: auto;
+  }
+  .subheader {
+    padding-top: var(--large-pad);
+    justify-content: center;
+  }
 
-    .info {
-        display: block;
-        
-    }
+  .info {
+    display: block;
+  }
 
-    .info-item {
-        padding-block: 10px;
-    }
+  .info-item {
+    padding-block: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    
-    
-    .h1 {
-        text-align: center;
-        font-size: 300%;
-        flex: 100%;
-    }
+  .h1 {
+    text-align: center;
+    font-size: 300%;
+    flex: 100%;
+  }
 
-    .h2 {
-        
-        padding: var(--mini-pad);
-        font-size: 200%;
-        margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
-    }
-    .h3 {
-        font-size: 200%;
-        }
+  .h2 {
+    padding: var(--mini-pad);
+    font-size: 200%;
+    margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
+  }
+  .h3 {
+    font-size: 200%;
+  }
 
-    .nav li {
-        font-size: 125%;
-        padding: var(--small-pad);
-        
-    }
-    .nav {
-        text-align: center;
-        line-height: 200%;
-        flex: auto;
-}
-.subheader {
+  .nav li {
+    font-size: 125%;
+    padding: var(--small-pad);
+  }
+  .nav {
+    text-align: center;
+    line-height: 200%;
+    flex: auto;
+  }
+  .subheader {
     justify-content: right;
-    
-}
+  }
 
-.contact {
+  .contact {
     display: block;
+  }
 
-}
-
-.info {
+  .info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+  }
 
-.info-item {
+  .info-item {
     margin: var(--small-pad);
     padding-inline: 20px;
+  }
 }
 
-}
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  .bio {
+    width: 75%;
+  }
 
-  /* media query for larger screens */
-  @media screen and (min-width: 992px) {
+  .about {
+    display: flex;
+  }
 
-    
-    .bio {
-        width: 75%;
-    }
+  .work {
+    display: flex;
+  }
 
-    .about {
-        display: flex;
-        
-    }
+  .contact {
+    display: flex;
+  }
 
-    .work {
-        display: flex;
-    }
+  .h1 {
+    padding-left: var(--large-pad);
+    font-size: 300%;
+    flex: none;
+    margin: var(--small-pad) var(--small-pad) var(--small-pad) 0;
+  }
 
-    .contact {
-        display: flex;
-    }
+  .h2 {
+    padding: var(--mini-pad);
+    font-size: 200%;
+    margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
+  }
 
-    .h1 {
-        
-        padding-left: var(--large-pad);
-        font-size: 300%;
-        flex:none;
-        margin: var(--small-pad) var(--small-pad) var(--small-pad) 0;
-    }
-
-    .h2 {
-        
-        padding: var(--mini-pad);
-        font-size: 200%;
-        margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
-    }
-
-    .h3 {
+  .h3 {
     border-right: 3px solid var(--dark-blue);
     border-bottom: none;
     font-size: 200%;
     width: 25%;
     text-align: right;
-    }
+  }
 
-    .nav li {
-        font-size: 100%;
-        padding: var(--mini-pad);
-        margin: var(--mini-pad);
-        
-    }
+  .nav li {
+    font-size: 100%;
+    padding: var(--mini-pad);
+    margin: var(--mini-pad);
+  }
 
-    .nav {
-        text-align: right;
-        flex: auto;
-        padding-right: var(--large-pad);
-        padding-top: 25px;
-        margin: var(--mini-pad);
-        
-    }
+  .nav {
+    text-align: right;
+    flex: auto;
+    padding-right: var(--large-pad);
+    padding-top: 25px;
+    margin: var(--mini-pad);
+  }
 
-    .subheader {
-        justify-content: right;
-        
-    }
-    
+  .subheader {
+    justify-content: right;
+  }
 }
