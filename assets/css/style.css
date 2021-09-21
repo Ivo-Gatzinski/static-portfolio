@@ -60,8 +60,8 @@ color: var(--light-turq);
     border-bottom: var(--light-turq) solid var(--micro-pad);
 }
 
-/*main section*/ 
-main .bio p {
+/*about me paragraphs*/ 
+.bio p {
     padding: var(--small-pad);
 }
 
@@ -81,12 +81,6 @@ main .bio p {
 }
 
 /*contact info links*/
-
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-
-}
 
 .info {
     display: flex;
@@ -132,7 +126,7 @@ main .bio p {
         margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
         border-bottom: var(--dark-blue) solid 2px;
             font-size: 133%;
-            flex:100%;
+            
     
     }
 
@@ -163,7 +157,7 @@ main .bio p {
 }
 
 @media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
+    
     
     .h1 {
         text-align: center;
@@ -221,14 +215,18 @@ main .bio p {
     .bio {
         width: 75%;
     }
-    .work {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
     .about {
         display: flex;
-        flex-wrap: wrap;
+        
+    }
+
+    .work {
+        display: flex;
+    }
+
+    .contact {
+        display: flex;
     }
 
     .h1 {
@@ -236,7 +234,6 @@ main .bio p {
         padding-left: var(--large-pad);
         font-size: 300%;
         flex:none;
-        width: 25%;
         margin: var(--small-pad) var(--small-pad) var(--small-pad) 0;
     }
 
