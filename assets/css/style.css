@@ -18,6 +18,12 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* a small spacing for main section*/
+main {
+    padding: var(--mini-pad);
+    margin: var(--mini-pad);
+}
+
 /*header behavior*/
 header {
   display: flex;
@@ -242,13 +248,16 @@ main {
     margin: var(--small-pad);
     padding-inline: 20px;
   }
-
+/* ensures samples cards have space gap */
   .samples {
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
     gap:var(--mini-pad);
   }
+/* next two make sure first card is twice the size of the others,
+taking into account about 5px padding */
+
   .card:first-child {
     flex: 0 0 98%;
     height: 250px;
@@ -263,10 +272,13 @@ main {
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
 
+    /* Fixes main sections alignment for large screens, 
+    including small padding for spacing between them */
     .about, .work, .contact {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        padding: var(--mini-pad);
     }
 
  .bio, .info { 
@@ -280,7 +292,7 @@ main {
     width: 75%;
   }
   .card:first-child {
-    flex: 0 0 98%;
+    flex: 0 0 97.45%;
     height: 300px;
   }
 
