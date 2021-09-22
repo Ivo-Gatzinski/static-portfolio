@@ -62,12 +62,11 @@ header {
   border-bottom: var(--light-turq) solid var(--micro-pad);
 }
 
-/* central section margins */
+/* central section margins
 main {
- margin-right:5%;
- margin-left:5%;
-
-}
+  margin-right: 5%;
+  margin-left: 5%;
+} */
 
 /*about me paragraphs*/
 .bio p {
@@ -76,20 +75,13 @@ main {
 
 /*section headings*/
 .h3 {
-  background-color: white;
   color: var(--dark-blue);
-}
-
-/*samples container spacing*/
-.samples {
-    padding: var(--small-pad);
 }
 
 /*sample cards with sepia effect*/
 .card {
-  background-origin: border-box;
   background-size: 100%;
-  border: var(--light-turq) solid var(--micro-pad);
+  border: var(--micro-pad) solid var(--light-turq);
   filter: sepia(35%);
   position: relative;
 }
@@ -198,12 +190,15 @@ main {
   }
 
   .samples {
-    width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction:column;
+      padding: var(--small-pad);
   }
 
   .card {
-    width: 100%;
     height: 150px;
+    margin:var(--mini-pad);
   }
 }
 
@@ -236,9 +231,6 @@ main {
     justify-content: right;
   }
 
-  .contact {
-    display: block;
-  }
 
   .info {
     display: flex;
@@ -254,54 +246,47 @@ main {
   .samples {
     display: flex;
     flex-wrap: wrap;
-    
+    flex-direction:row;
+    gap:var(--mini-pad);
+  }
+  .card:first-child {
+    flex: 0 0 98%;
+    height: 250px;
   }
 
   .card {
-    width: 50%;
+    flex: 0 0 48%;
     height: 125px;
   }
-  .surf {
-    width: 100%;
-    height: 250px;
-  }
+  
 }
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
-  
-    main {
-        margin-right:var(--large-pad);
+
+    .about, .work, .contact {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
-    .bio {
+
+ .bio, .info { 
     width: 75%;
-  }
+ }
 
   .samples {
-      display: flex;
-      width:75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:var(--mini-pad);
+    width: 75%;
   }
-
-
-  .card {
-    width: 50%;
-    height: 150px;
-  }
-
-  .surf {
-    width: 100%;
+  .card:first-child {
+    flex: 0 0 98%;
     height: 300px;
   }
 
-  .about {
-    display: flex;
-  }
-
-  .work {
-    display: flex;
-  }
-
-  .contact {
-    display: flex;
+  .card {
+    flex: 0 0 48%;
+    height: 150px;
   }
 
   .h1 {
