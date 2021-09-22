@@ -234,6 +234,8 @@ main {
     flex: auto;
   }
   .subheader {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: right;
   }
 
@@ -337,6 +339,8 @@ taking into account about 5px padding */
   }
 
   .subheader {
+    display:flex;
+    flex-wrap: wrap;
     justify-content: right;
   }
 }
