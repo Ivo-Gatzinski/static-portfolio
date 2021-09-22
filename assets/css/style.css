@@ -68,12 +68,6 @@ header {
   border-bottom: var(--light-turq) solid var(--micro-pad);
 }
 
-/* central section margins
-main {
-  margin-right: 5%;
-  margin-left: 5%;
-} */
-
 /*about me paragraphs*/
 .bio p {
   padding: var(--small-pad);
@@ -183,6 +177,8 @@ main {
     flex: auto;
   }
   .subheader {
+    display: flex;
+    flex-wrap: wrap;
     padding-top: var(--large-pad);
     justify-content: center;
   }
