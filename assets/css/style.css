@@ -62,18 +62,16 @@ header {
   border-bottom: var(--light-turq) solid var(--micro-pad);
 }
 
-/*central section margins*/
-.about,
-.work,
-.contact {
-  margin-right: 40px;
-  margin-left: 20px;
+/* central section margins */
+main {
+ margin-right:5%;
+ margin-left:5%;
+
 }
 
 /*about me paragraphs*/
 .bio p {
   padding: var(--small-pad);
-  flex: 100%;
 }
 
 /*section headings*/
@@ -82,7 +80,7 @@ header {
   color: var(--dark-blue);
 }
 
-/*cards spacing*/
+/*samples container spacing*/
 .samples {
     padding: var(--small-pad);
 }
@@ -125,7 +123,7 @@ header {
 }
 
 .pastel {
-  background-color: var(--light-turq);
+  background-color: lightslategrey;
 }
 
 .run {
@@ -256,7 +254,7 @@ header {
   .samples {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    
   }
 
   .card {
@@ -270,15 +268,19 @@ header {
 }
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
-  .bio {
+  
+    main {
+        margin-right:var(--large-pad);
+    }
+    .bio {
     width: 75%;
   }
 
   .samples {
       display: flex;
       width:75%;
-
   }
+
 
   .card {
     width: 50%;
@@ -312,14 +314,14 @@ header {
   .h2 {
     padding: var(--mini-pad);
     font-size: 200%;
-    margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
+    margin: var(--mini-pad) var(--large-pad) var(--mini-pad) 0;
   }
 
   .h3 {
     border-right: 3px solid var(--dark-blue);
     border-bottom: none;
     font-size: 200%;
-    width: 25%;
+    width: 20%;
     text-align: right;
   }
 
