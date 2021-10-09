@@ -5,7 +5,7 @@ html {
 
 /*set color and font variables*/
 :root {
-  --light-turq: #82c2c3;
+  --light-turq: #4db8ff;
   --dark-grey: #363642;
   --dark-blue: #094d9b;
   --large-pad: 50px;
@@ -33,10 +33,13 @@ header {
 }
 
 /*top headings*/
-.h1,
+.h1
+{color: var(--dark-grey);
+  background-color: var(--light-turq);
+}
 .h2 {
   background-color: var(--light-turq);
-  color: var(--dark-grey);
+  color: white;
   padding: var(--mini-pad);
 }
 
@@ -82,13 +85,15 @@ header {
 .card {
   background-size: 100%;
   border: var(--micro-pad) solid var(--light-turq);
-  filter: sepia(35%);
+  filter: none;
   position: relative;
+
 }
 
 /*remove sepia effect on hover*/
 .card:hover {
-  filter: none;
+  
+  filter: sepia(35%);
 }
 
 /*style titles inside cards*/
