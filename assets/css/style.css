@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* a small spacing for main section*/
@@ -29,7 +29,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   /* background-color: var(--dark-grey); */
-  color: var(--dark-blue);
+  
 }
 
 /*top headings*/
@@ -41,7 +41,7 @@ header {
 .h2 {
   /* background-color: var(--light-turq); */
   color: white;
-  padding: var(--mini-pad);
+  /* padding: var(--mini-pad); */
 }
 
 /*secondary subtitle*/
@@ -163,9 +163,10 @@ header {
   }
 
   .h2 {
-    padding: var(--mini-pad);
+    text-align: center;
     font-size: 150%;
-    margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
+    padding: var(--small-pad);
+    /* margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0; */
   }
 
   .h3 {
@@ -188,7 +189,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding-top: var(--large-pad);
-    justify-content: center;
   }
 
   .info {
@@ -308,17 +308,18 @@ taking into account about 5px padding */
   }
 
   .h1 {
-    /* padding-right: var(--large-pad); */
+    display: flex;
     font-size: 250%;
-    flex: none;
-    /* margin: var(--small-pad) var(--small-pad) var(--small-pad) 0; */
-    padding-left: 22%;
+    flex: wrap;
+    justify-content: left;
+    margin-left: 22%;
+    /* padding-left: 22%; */
   }
 
   .h2 {
-    padding: var(--mini-pad);
+    /* padding: var(--mini-pad); */
     font-size: 200%;
-    margin: var(--large-pad);
+    margin-left: 22%;
   }
 
   .h3 {
@@ -340,16 +341,16 @@ taking into account about 5px padding */
   }
 
   .nav {
-    text-align: right;
-    flex: auto;
-    padding-right: var(--large-pad);
+    display: flex;
+    /* text-align: right; */
+    flex: wrap;
+    /* padding-right: var(--large-pad);
     padding: var(--large-pad);
-    margin: var(--mini-pad);
+    margin: var(--mini-pad); */
   }
 
   .subheader {
     display:flex;
     flex-wrap: wrap;
-    justify-content: right;
   }
 }
