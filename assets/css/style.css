@@ -98,10 +98,9 @@ main {
 
 }
 
-/*remove sepia effect on hover*/
 .card:hover {
   
-  filter: brightness(0.75);
+  filter: none;
 }
 
 /*style titles inside cards*/
@@ -119,22 +118,28 @@ main {
 /* individual backgrounds for cards */
 .surf {
   background-image: url("../images/surf.jpeg");
+  filter:opacity(.65);
+  
 }
 
 .LED {
   background-image: url("../images/red_dot.jpeg");
+  filter:opacity(.65);
 }
 
 .calc {
   background-image: url("../images/calc.jpeg");
+  filter:opacity(.65);
 }
 
 .pastel {
   background-color: lightslategrey;
+  filter:opacity(.65);
 }
 
 .run {
   background-image: url("../images/run.jpeg");
+  filter:opacity(.65);
 }
 
 /*contact info links*/
