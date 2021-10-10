@@ -11,6 +11,6 @@ $(".calc").click(function() {
 });
 
 $(".run").click(function() {
-    window.open("https://reeeeeahn.github.io/adoption-connection/");
+    window.open("https://ivo-gatzinski.github.io/adoption-connection");
 });
 
