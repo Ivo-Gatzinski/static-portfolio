@@ -20,8 +20,8 @@ body {
 }
 
 
-.space-fill {
-  height: 120px;
+.space-fill-1 {
+  height: 100px;
 }
 
 main {
@@ -224,6 +224,10 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .space-fill-2 {
+    height: 500px;
+  }
+
   .h1 {
     text-align: center;
     font-size: 300%;
@@ -305,8 +309,7 @@ taking into account about 5px padding */
     flex-wrap: wrap;
     gap:var(--mini-pad);
     width: 65%;
-    margin-right: 15%;
-    margin-left: 20%;
+    margin: 0 auto;
 }
   .card:first-child {
     flex: 0 0 98.4%;
