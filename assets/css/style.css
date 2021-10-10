@@ -69,17 +69,12 @@ main {
   text-decoration: none;
   border-bottom: white solid var(--micro-pad);
 }
-/* 
-.bio p {
-  padding: var(--small-pad);
-} */
-
 
 .contact-header {
   color: var(--light-turq);
 }
 
-/*sample cards with sepia effect*/
+/*sample cards with transparent effect*/
 .card {
   background-size: 100%;
   filter: none;
@@ -99,37 +94,38 @@ main {
   padding: var(--mini-pad);
   text-align: left;
   position: absolute;
-  bottom: 40%;
+  top: 5%;
   left: var(--large-pad);
   color: black;
+  font-size: 150%;
 
 }
 
 /* individual backgrounds for cards */
 .surf {
   background-image: url("../images/surf.jpeg");
-  filter:opacity(.65);
+  filter:opacity(.75);
   
 }
 
 .LED {
   background-image: url("../images/planner.jpeg");
-  filter:opacity(.65);
+  filter:opacity(.75);
 }
 
 .calc {
   background-image: url("../images/key.jpeg");
-  filter:opacity(.65);
+  filter:opacity(.75);
 }
 
 .pastel {
   background-image: url("../images/pastels.jpeg");
-  filter:opacity(.65);
+  filter:opacity(.75);
 }
 
 .run {
   background-image: url("../images/run.jpeg");
-  filter:opacity(.65);
+  filter:opacity(.75);
 }
 
 /*contact info links*/
