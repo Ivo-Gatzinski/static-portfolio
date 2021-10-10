@@ -19,6 +19,11 @@ body {
   
 }
 
+
+.space-fill {
+  height: 120px;
+}
+
 main {
   
   background-image: url("../images/blue_herring.jpeg");
@@ -26,18 +31,6 @@ main {
   /* background-color: var(--dark-blue); */
   background-size: stretch;
   /* background-repeat: no-repeat; */
-}
-
-/*header behavior*/
-header {
-  display: flex;
-  flex-wrap: wrap;
-  /* background-color: var(--dark-grey); */
-  
-}
-
-footer {
-  background-color: var(--dark-blue);
 }
 
 /*top headings*/
@@ -293,6 +286,7 @@ taking into account about 5px padding */
   }
   
 }
+
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
 
