@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Syne Mono', monospace;
   
 }
 
@@ -91,7 +91,7 @@ main {
 /*sample cards with sepia effect*/
 .card {
   background-size: 100%;
-  border: var(--micro-pad) solid var(--light-turq);
+  /* border: var(--micro-pad) solid var(--light-turq); */
   filter: none;
   position: relative;
   /* border-radius: 50%; */
