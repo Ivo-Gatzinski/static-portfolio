@@ -84,6 +84,7 @@ main {
   background-size: 100%;
   filter: none;
   position: relative;
+  border-radius: 10px;
 
 }
 
