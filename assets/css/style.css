@@ -113,17 +113,17 @@ main {
 }
 
 .LED {
-  background-image: url("../images/red_dot.jpeg");
+  background-image: url("../images/planner.jpeg");
   filter:opacity(.65);
 }
 
 .calc {
-  background-image: url("../images/calc.jpeg");
+  background-image: url("../images/key.jpeg");
   filter:opacity(.65);
 }
 
 .pastel {
-  background-color: lightslategrey;
+  background-image: url("../images/pastels.jpeg");
   filter:opacity(.65);
 }
 
