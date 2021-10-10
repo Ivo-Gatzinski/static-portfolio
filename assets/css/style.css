@@ -15,13 +15,17 @@ html {
 }
 
 body {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  
 }
 
-/* a small spacing for main section*/
 main {
-    padding: var(--mini-pad);
-    margin: var(--mini-pad);
+  
+  background-image: url("../images/blue_herring.jpeg");
+  background-position: bottom;
+  /* background-color: var(--dark-blue); */
+  background-size: stretch;
+  /* background-repeat: no-repeat; */
 }
 
 /*header behavior*/
@@ -32,28 +36,37 @@ header {
   
 }
 
+footer {
+  background-color: var(--dark-blue);
+}
+
 /*top headings*/
 .h1
 {
   background-color: none;
-  color: var(--dark-blue);
+  color: white;
 }
 .h2 {
   /* background-color: var(--light-turq); */
   color: white;
   /* padding: var(--mini-pad); */
 }
-
 /*secondary subtitle*/
 .subheader {
   display: flex;
   flex-wrap: wrap;
-  padding: var(--small-pad);
-  background-image: url("../images/blue_herring.jpeg");
-  background-origin: border-box;
+  /* padding: var(--small-pad); */
+  /* background-image: url("../images/blue_herring.jpeg");
+  background-position: bottom;
   background-color: transparent;
-  background-size: 100%;
+  background-size: 100%; */
 }
+
+.work-header {
+
+  color: var(--dark-blue);
+}
+
 
 /*navigation look*/
 .nav {
@@ -77,8 +90,8 @@ header {
   padding: var(--small-pad);
 }
 
-/*section headings*/
-.h3 {
+
+.contact-header {
   color: var(--light-turq);
 }
 
@@ -95,7 +108,7 @@ header {
 /*remove sepia effect on hover*/
 .card:hover {
   
-  filter: sepia(35%);
+  filter: brightness(0.75);
 }
 
 /*style titles inside cards*/
@@ -106,6 +119,7 @@ header {
   position: absolute;
   bottom: 40%;
   left: var(--large-pad);
+  color: black;
 
 }
 
@@ -135,15 +149,17 @@ header {
 .info {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; 
+  /* margin-left: -20%; */
 }
 
 .info-item {
   margin: var(--small-pad);
-  padding-inline: var(--large-pad);
+ 
 }
 
 .info-item a {
-  color: var(--dark-blue);
+  color: white;
   text-decoration: none;
   border-bottom: var(--light-turq) solid var(--micro-pad);
   padding-bottom: var(--mini-pad);
@@ -189,10 +205,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding-top: var(--large-pad);
+    justify-content: center;
   }
 
   .info {
     display: block;
+    padding-left: 20%;
   }
 
   .info-item {
@@ -216,13 +234,13 @@ header {
   .h1 {
     text-align: center;
     font-size: 300%;
-    flex: 100%;
+    /* flex: 100%; */
   }
 
   .h2 {
-    padding: var(--mini-pad);
+    /* padding: var(--mini-pad); */
     font-size: 200%;
-    margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
+    /* margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0; */
   }
   .h3 {
     font-size: 200%;
@@ -235,12 +253,11 @@ header {
   .nav {
     text-align: center;
     line-height: 200%;
-    flex: auto;
   }
   .subheader {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
+    display: block;
+    /* flex-wrap: wrap; */
+    /* justify-content: left;  */
   }
 
 
@@ -248,11 +265,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: -20%;
+    
   }
 
   .info-item {
     margin: var(--small-pad);
-    padding-inline: 20px;
   }
 /* ensures samples cards have space gap */
   .samples {
@@ -278,27 +296,26 @@ taking into account about 5px padding */
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
 
-    /* Fixes main sections alignment for large screens, 
-    including small padding for spacing between them */
-    .about, .work, .contact {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        padding: var(--mini-pad);
-    }
 
- .bio, .info { 
-    width: 75%;
+ .info { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
  }
-
+ .info-item {
+   padding: 20px;
+ }
   .samples {
     display: flex;
     flex-wrap: wrap;
     gap:var(--mini-pad);
-    width: 75%;
-  }
+    width: 65%;
+    margin-right: 15%;
+    margin-left: 20%;
+}
   .card:first-child {
-    flex: 0 0 97.45%;
+    flex: 0 0 98.4%;
     height: 300px;
   }
 
@@ -311,7 +328,7 @@ taking into account about 5px padding */
     display: flex;
     font-size: 250%;
     flex: wrap;
-    justify-content: left;
+    /* justify-content: space-between; */
     margin-left: 22%;
     /* padding-left: 22%; */
   }
@@ -320,6 +337,8 @@ taking into account about 5px padding */
     /* padding: var(--mini-pad); */
     font-size: 200%;
     margin-left: 22%;
+    /* text-align: right;  */
+    
   }
 
   .h3 {
