@@ -30,9 +30,7 @@ main {
   
   background-image: url("../images/blue_herring.jpeg");
   background-position: bottom;
-  /* background-color: var(--dark-blue); */
   background-size: stretch;
-  /* background-repeat: no-repeat; */
 }
 
 /*top headings*/
@@ -42,19 +40,11 @@ main {
   color: white;
 }
 .h2 {
-  /* background-color: var(--light-turq); */
   color: white;
-  /* padding: var(--mini-pad); */
 }
-/*secondary subtitle*/
 .subheader {
   display: flex;
   flex-wrap: wrap;
-  /* padding: var(--small-pad); */
-  /* background-image: url("../images/blue_herring.jpeg");
-  background-position: bottom;
-  background-color: transparent;
-  background-size: 100%; */
 }
 
 .work-header {
@@ -79,11 +69,10 @@ main {
   text-decoration: none;
   border-bottom: white solid var(--micro-pad);
 }
-
-/*about me paragraphs*/
+/* 
 .bio p {
   padding: var(--small-pad);
-}
+} */
 
 
 .contact-header {
@@ -93,10 +82,8 @@ main {
 /*sample cards with sepia effect*/
 .card {
   background-size: 100%;
-  /* border: var(--micro-pad) solid var(--light-turq); */
   filter: none;
   position: relative;
-  /* border-radius: 50%; */
 
 }
 
@@ -182,7 +169,6 @@ main {
     text-align: center;
     font-size: 150%;
     padding: var(--small-pad);
-    /* margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0; */
   }
 
   .h3 {
@@ -238,13 +224,10 @@ main {
   .h1 {
     text-align: center;
     font-size: 300%;
-    /* flex: 100%; */
   }
 
   .h2 {
-    /* padding: var(--mini-pad); */
     font-size: 200%;
-    /* margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0; */
   }
   .h3 {
     font-size: 200%;
@@ -260,8 +243,6 @@ main {
   }
   .subheader {
     display: block;
-    /* flex-wrap: wrap; */
-    /* justify-content: left;  */
   }
 
 
@@ -332,29 +313,22 @@ taking into account about 5px padding */
     display: flex;
     font-size: 250%;
     flex: wrap;
-    /* justify-content: space-between; */
     margin-left: 22%;
-    /* padding-left: 22%; */
   }
 
   .h2 {
-    /* padding: var(--mini-pad); */
     font-size: 200%;
     margin-left: 22%;
-    /* text-align: right;  */
     
   }
 
   .h3 {
     display: flex;
-    /* border-right: 3px solid var(--dark-blue); */
     border-bottom: none;
     font-size: 200%;
     width: 20%;
     text-align: right;
-    /* border-radius: 50%; */
     justify-content: right; 
-    /* align-items: center; */
   }
 
   .nav li {
@@ -365,11 +339,7 @@ taking into account about 5px padding */
 
   .nav {
     display: flex;
-    /* text-align: right; */
     flex: wrap;
-    /* padding-right: var(--large-pad);
-    padding: var(--large-pad);
-    margin: var(--mini-pad); */
   }
 
   .subheader {
