@@ -121,9 +121,11 @@ main {
   filter:opacity(.75);
 }
 
-.pastel {
-  background-image: url("../images/pastels.jpeg");
+.eight_ball {
+  background-image: url("../images/eight_ball.png");
+  background-position: top;
   filter:opacity(.75);
+  background-size: 25%;
 }
 
 .run {

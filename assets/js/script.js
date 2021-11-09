@@ -14,3 +14,6 @@ $(".run").click(function() {
     window.open("https://ivo-gatzinski.github.io/adoption-connection");
 });
 
+$(".eight_ball").click(function() {
+    window.open("https://magic8-ezi.herokuapp.com/");
+});
