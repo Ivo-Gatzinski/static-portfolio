@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 
 /*thank you Erica for asking the question in OH*/
 html {
@@ -17,25 +17,21 @@ html {
 }
 
 body {
-  font-family: 'Syne Mono', monospace;
-  
+  font-family: "Syne Mono", monospace;
 }
-
 
 .space-fill-1 {
   height: 100px;
 }
 
 main {
-  
   background-image: url("../images/blue_herring.jpeg");
   background-position: bottom;
   background-size: stretch;
 }
 
 /*top headings*/
-.h1
-{
+.h1 {
   background-color: none;
   color: white;
 }
@@ -43,17 +39,14 @@ main {
   color: white;
 }
 .subheader {
-   background-color: rgba(0, 29, 92, 0.3);
+  background-color: rgba(0, 29, 92, 0.3);
   color: white;
   border-radius: 10px;
-  width: fit-content;
 }
 
 .work-header {
-
   color: var(--dark-blue);
 }
-
 
 /*navigation look*/
 .nav {
@@ -82,11 +75,9 @@ main {
   filter: none;
   position: relative;
   border-radius: 10px;
-
 }
 
 .card:hover {
-  
   filter: none;
 }
 
@@ -101,36 +92,34 @@ main {
   left: var(--large-pad);
   color: black;
   font-size: 150%;
-
 }
 
 /* individual backgrounds for cards */
 .surf {
   background-image: url("../images/surf.jpeg");
-  filter:opacity(.75);
-  
+  filter: opacity(0.75);
 }
 
 .LED {
   background-image: url("../images/planner.jpeg");
-  filter:opacity(.75);
+  filter: opacity(0.75);
 }
 
 .calc {
   background-image: url("../images/key.jpeg");
-  filter:opacity(.75);
+  filter: opacity(0.75);
 }
 
 .eight_ball {
   background-image: url("../images/eight_ball.png");
   background-position: top;
-  filter:opacity(.75);
+  filter: opacity(0.75);
   background-size: 25%;
 }
 
 .run {
   background-image: url("../images/run.jpeg");
-  filter:opacity(.75);
+  filter: opacity(0.75);
 }
 
 /*contact info links*/
@@ -138,12 +127,11 @@ main {
 .info {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .info-item {
   margin: var(--small-pad);
- 
 }
 
 .info-item a {
@@ -183,7 +171,7 @@ main {
     font-size: 125%;
     padding: var(--small-pad);
   }
-  
+
   .subheader {
     display: flex;
     flex-wrap: wrap;
@@ -201,25 +189,24 @@ main {
   }
 
   .samples {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction:column;
-      padding: var(--small-pad);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: var(--small-pad);
   }
 
   .card {
     height: 150px;
-    margin:var(--mini-pad);
+    margin: var(--mini-pad);
   }
 
   .subheader {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     margin-left: 3%;
     margin-right: 4%;
     padding: 10px;
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -246,32 +233,29 @@ main {
   .nav {
     text-align: right;
     line-height: 200%;
-    /* justify-content: right; */
   }
   .subheader {
     display: block;
   }
-
 
   .info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: -20%;
-    
   }
 
   .info-item {
     margin: var(--small-pad);
   }
-/* ensures samples cards have space gap */
+  /* ensures samples cards have space gap */
   .samples {
     display: flex;
     flex-wrap: wrap;
-    flex-direction:row;
-    gap:var(--mini-pad);
+    flex-direction: row;
+    gap: var(--mini-pad);
   }
-/* next two make sure first card is twice the size of the others,
+  /* next two make sure first card is twice the size of the others,
 taking into account about 5px padding */
 
   .card:first-child {
@@ -285,37 +269,31 @@ taking into account about 5px padding */
   }
 
   .subheader {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    margin-left: 1.8%;
-    margin-right: 2.8%;
     padding: 10px;
   }
-  
 }
 
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
-
-
- .info { 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
- }
- .info-item {
-   padding: 20px;
- }
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info-item {
+    padding: 20px;
+  }
   .samples {
     display: flex;
     flex-wrap: wrap;
-    gap:var(--mini-pad);
+    gap: var(--mini-pad);
     width: 65%;
     margin: 0 auto;
-}
+  }
   .card:first-child {
-    flex: 0 0 98.4%;
+    flex: 0 0 97%;
     height: 300px;
   }
 
@@ -334,7 +312,6 @@ taking into account about 5px padding */
   .h2 {
     font-size: 200%;
     /* margin-left: 22%; */
-    
   }
 
   .h3 {
@@ -343,7 +320,7 @@ taking into account about 5px padding */
     font-size: 200%;
     width: 20%;
     text-align: right;
-    justify-content: right; 
+    justify-content: right;
   }
 
   .nav li {
@@ -359,10 +336,10 @@ taking into account about 5px padding */
   }
 
   .subheader {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    margin-left: 18.8%;
-    margin-right: 18.8%;
+    margin-left: 18.5%;
+    margin-right: 20%;
     padding: 10px;
     justify-content: space-between;
   }
