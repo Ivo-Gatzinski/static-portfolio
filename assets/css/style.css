@@ -167,12 +167,13 @@ main {
     font-size: 150%;
     padding: var(--small-pad);
   }
-
+a {
+  text-decoration: none;
+}
   .h3 {
     padding: var(--mini-pad);
     margin: var(--mini-pad) var(--mini-pad) var(--mini-pad) 0;
     border-bottom: var(--dark-blue) solid 2px;
-    font-size: 133%;
   }
 
   .nav li {
