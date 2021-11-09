@@ -75,6 +75,7 @@ main {
   filter: none;
   position: relative;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -91,7 +92,14 @@ main {
   top: 5%;
   left: var(--large-pad);
   color: black;
+}
+
+.h4 h3 {
   font-size: 150%;
+}
+
+.h4 p {
+  font-size: 100%;
 }
 
 /* individual backgrounds for cards */
@@ -312,6 +320,10 @@ taking into account about 5px padding */
   .h2 {
     font-size: 200%;
     /* margin-left: 22%; */
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .h3 {
