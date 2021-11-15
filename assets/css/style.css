@@ -105,21 +105,25 @@ main {
 /* individual backgrounds for cards */
 .surf {
   background-image: url("../images/surf.jpeg");
+  background-color: skyblue;
   filter: opacity(0.75);
 }
 
 .LED {
   background-image: url("../images/planner.jpeg");
+  background-color: magenta;
   filter: opacity(0.75);
 }
 
 .calc {
   background-image: url("../images/key.jpeg");
+  background-color: grey;
   filter: opacity(0.75);
 }
 
 .eight_ball {
   background-image: url("../images/eight_ball.png");
+  background-color: white;
   background-position: top;
   filter: opacity(0.75);
   background-size: 25%;
@@ -127,6 +131,7 @@ main {
 
 .run {
   background-image: url("../images/run.jpeg");
+  background-color: green;
   filter: opacity(0.75);
 }
 
